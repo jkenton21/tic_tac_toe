@@ -1,0 +1,91 @@
+/* Tic-Tac-Toe Game -- CSS Style Sheet */
+
+body {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.header {
+    background-color: rgb(102, 175, 243);
+    color: white;
+    font-size: 32px;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerData {
+    width: 100vw;
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.reset Button {
+    margin: 20px;
+    width: 100px;
+}
+
+.winningMessage {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.gameGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    margin-top: 50px;
+}
+
+.cell {
+    border-style: solid;
+    border-color: black;
+}
+
+#cell1 {
+    border-top: none;
+    border-left: none;
+}
+
+#cell2 {
+    border-top: none;
+}
+
+#cell3 {
+    border-top: none;
+    border-right: none;
+}
+
+#cell4 {
+    border-left: none;
+}
+
+#cell6 {
+    border-right: none;
+}
+
+#cell7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#cell8 {
+    border-bottom: none;
+}
+
+#cell9 {
+    border-right: none;
+    border-bottom: none;
+}
