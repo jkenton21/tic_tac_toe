@@ -59,38 +59,11 @@ body {
     align-content: center;
 }
 
-#cell1 {
-    border-top: none;
-    border-left: none;
+.cell:hover{
+    cursor: pointer;
+    background-color: lightgrey;
 }
 
-#cell2 {
-    border-top: none;
-}
-
-#cell3 {
-    border-top: none;
-    border-right: none;
-}
-
-#cell4 {
-    border-left: none;
-}
-
-#cell6 {
-    border-right: none;
-}
-
-#cell7 {
-    border-left: none;
-    border-bottom: none;
-}
-
-#cell8 {
-    border-bottom: none;
-}
-
-#cell9 {
-    border-right: none;
-    border-bottom: none;
+.X {
+    
 }

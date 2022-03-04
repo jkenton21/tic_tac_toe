@@ -27,6 +27,11 @@ const gameBoard = (() => {
             cell.setAttribute('data', game.activePlayer.marker);
             gameboard[index] = game.activePlayer.marker;
             cell.style.pointerEvents = "none";
+            if (game.activePlayer.marker === 'X') {
+                cell.innerHTML = `X`;
+            } else {
+                cell.innerHTML = `O`;
+            };
             game.remainingSpots -= 1;
             game.results();
             //turns
@@ -47,8 +52,8 @@ const gameBoard = (() => {
 //Game execution Object
 const game = (() => {
     //creates players based on entered Names
-    const playerX = player('Jared', 'X');
-    const playerO = player('computer', 'O');
+    const playerX = player('Player X', 'X');
+    const playerO = player('Player O', 'O');
     //initialize game
     let activePlayer = playerX;
     let winnerDeclared = false;
@@ -81,7 +86,7 @@ const game = (() => {
 
     //function to display players turn
     function alertNextPlayer() {
-        this.activePlayer === playerX ? playerName.textContent = 'computer' : playerName.textContent = 'Jared';
+        this.activePlayer === playerX ? playerName.textContent = 'Player O' : playerName.textContent = 'Player X';
     }
 
     //function to change turns
