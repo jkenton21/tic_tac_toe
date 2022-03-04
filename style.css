@@ -36,10 +36,11 @@ body {
     width: 100px;
 }
 
-.winningMessage {
+.winnerMessage {
     font-weight: bold;
     font-style: italic;
     font-size: 24px;
+    padding: 20px;
 }
 
 .gameGrid {
@@ -62,8 +63,4 @@ body {
 .cell:hover{
     cursor: pointer;
     background-color: lightgrey;
-}
-
-.X {
-    
 }
